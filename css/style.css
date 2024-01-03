@@ -62,11 +62,20 @@ button {
 textarea {
   resize: none; }
 
+ 
+
+ /*Heading stuff */
 .heading-primary {
-  font-size: 6rem;
+  font-family: coolLetter;
+  font-size: 7rem;
+  position: relative;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  margin-bottom: 50px;
   text-align: center; }
+
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
@@ -103,7 +112,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #440549;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -185,7 +194,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(35, 3, 46, 0.8), rgba(35, 3, 46, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -508,7 +517,29 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .header__content {
         padding: 0 2rem; } }
+
+      .header__home{
+        margin-top: 3px;
+        width: 12rem;
+          height: 4rem;
+      }
+      .header__hobbies{
+        margin-top: 2.2px;
+        width: 16rem;
+          height: 4rem;
+          overflow: hidden;
+
+      }
+      .header__projects{
+        padding-top: 0;
+        width: 19rem;
+          height: 4.5rem;
+          overflow: hidden;
+
+      }
+
   .header__logo-container {
+    
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -528,6 +559,25 @@ textarea {
         width: 4.5rem;
         height: 4.5rem;
         margin-right: 1.2rem; } }
+
+  .header__language-img-cont {
+    width: 7rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    align-items: center;
+    background: #ffffff; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo-img-cont {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: 1.2rem; } }
+      
+
+
+
+
   .header__logo-img {
     width: 100%;
     height: 100%;
@@ -535,30 +585,41 @@ textarea {
     object-position: center;
     display: block; }
   .header__logo-sub {
-    font-size: 1.8rem;
+    font-family: disco;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px; }
+    
   .header__links {
     display: flex; }
     @media only screen and (max-width: 37.5em) {
       .header__links {
         display: none; } }
   .header__link {
-    padding: 2.2rem 3rem;
+    font-family: disco;
+    padding: 1rem 2rem;
     display: inline-block;
-    font-size: 1.6rem;
-    color: #333;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing:0px;
     font-weight: 700;
     transition: color .3s; }
+    .header__link span{
+      padding: 0%;
+      
+    }
     .header__link:hover {
       color: #0062b9; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
-        padding: 3rem 1.8rem;
+        padding: 3rem 1rem;
         font-size: 1.5rem; } }
+
+        
+
+
+
   .header__main-ham-menu-cont {
     display: none;
     width: 3rem;
@@ -702,3 +763,23 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+
+    /*THE DIFFERENT FONTS*/
+
+    @font-face {
+      font-family: coolLetter;
+      src: url(CAVEMAN_.TTF);
+  }
+    @font-face{
+      font-family: skater;
+      src:url(SKATERDUDES.ttf)
+    }
+    @font-face {
+      font-family: KLEP;
+      src: url(KLEPTOMANIAC.TTF);
+    }
+    @font-face {
+      font-family: disco;
+      src: url(disko_tt.ttf);
+    }
